@@ -1,0 +1,18 @@
+{
+    "name": "skg_suraj/quizapp",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "SkgSuraj\\Quizapp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "suraj946",
+            "email": "sgsuraj150@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

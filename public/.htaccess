@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} !^/assets/
+    RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|ico|woff|woff2|ttf|svg)$
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>
+
+# Increase the maximum request body size to 50MB (or any size you prefer)
+<IfModule mod_php7.c>
+    php_value post_max_size 50M
+    php_value upload_max_filesize 50M
+</IfModule>
+
+# Apache directive to increase body size limit (50MB in bytes)
+LimitRequestBody 52428800

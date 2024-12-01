@@ -1,0 +1,16 @@
+.popup {
+  position: fixed;
+  right: -800px;
+  bottom: 25px;
+  z-index: 1000;
+  background-color: #3f89d9;
+  width: 20%;
+  max-width: 40%;
+  border-radius: 5px;
+  box-shadow: 13px 8px 23px -4px rgba(0, 0, 0, 0.1);
+  padding: 15px 10px; 
+  font-size: 20px;
+  font-family: system-ui;
+  transition: all 0.2s ease;
+  color: white;
+}
